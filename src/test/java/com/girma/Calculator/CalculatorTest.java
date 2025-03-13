@@ -1,4 +1,4 @@
-package test.java.com.girma.Calculator; 
+package main.java.com.girma.Calculator; 
 import org.junit.Test; 
 import static org.junit.Assert.assertEquals; 
  
