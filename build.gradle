@@ -24,6 +24,19 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testImplementation 'junit:junit:4.13'
 }
+jacoco {
+    toolVersion = "0.8.6"
+}
+
+
+jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
 
 jacocoTestCoverageVerification {
 	violationRules {
